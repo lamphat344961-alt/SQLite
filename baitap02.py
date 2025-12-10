@@ -176,7 +176,7 @@ cursor = conn.cursor()
 
 # A. Yêu Cầu Thống Kê và Toàn Cục
 # 1. Đếm tổng số họa sĩ đã được lưu trữ trong bảng.
-'''
+
 slq_dem_tong_so_hoa_si = """
 SELECT COUNT(*) AS Tong_So_Hoa_Si
 FROM painters_info;
@@ -185,7 +185,7 @@ cursor.execute(slq_dem_tong_so_hoa_si)
 tong_so_hoa_si = cursor.fetchone()[0]
 print(f"Tổng số họa sĩ trong bảng: {tong_so_hoa_si}")
 
-'''
+
 
 # 2. Hiển thị 5 dòng dữ liệu đầu tiên để kiểm tra cấu trúc và nội dung bảng.
 '''
